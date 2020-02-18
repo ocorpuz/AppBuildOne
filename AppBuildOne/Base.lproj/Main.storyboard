@@ -45,11 +45,11 @@
                                 <rect key="frame" x="16" y="152" width="343" height="466"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Since its inception in 1976, the University of Hawaiʻi – West Oʻahu has been committed to delivering accessible, affordable higher education to residents on the Leeward Coast through dynamic, flexible, and responsive methods.
+                                <string key="text">Since its inception in 1976, the University of Hawaiʻi – West Oʻahu has been committed to delivering accessible, affordable higher education to residents on the Leeward Coast through dynamic, flexible, and responsive methods.
 
 UH West Oʻahu moved to its current campus in 2012 and continues to construct new facilities to meet the needs of its growing enrollment. The university strives to be a good community partner by meeting the educational requirements of its community by providing educational programs responsive to the local job market.
 
-UH West Oʻahu offers unique programs such as creative media, cybersecurity, health sciences, hospitality and tourism, and sustainable community food systems – developed to address workforce needs and leverage today’s technologies to train the next generation of community leaders.</mutableString>
+UH West Oʻahu offers unique programs such as creative media, cybersecurity, health sciences, hospitality and tourism, and sustainable community food systems – developed to address workforce needs and leverage today’s technologies to train the next generation of community leaders.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -58,6 +58,9 @@ UH West Oʻahu offers unique programs such as creative media, cybersecurity, hea
                                 <rect key="frame" x="16" y="588" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About UHWO"/>
+                                <connections>
+                                    <action selector="AboutUHWOpressed:" destination="GWr-v3-2eX" eventType="touchUpInside" id="NBe-Hz-LiZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V02-kR-HmO">
                                 <rect key="frame" x="225" y="588" width="150" height="30"/>
@@ -74,6 +77,7 @@ UH West Oʻahu offers unique programs such as creative media, cybersecurity, hea
                     <navigationItem key="navigationItem" id="C9b-a0-3XX"/>
                     <connections>
                         <outlet property="UHWOlabel" destination="Lx9-kB-AdA" id="ROe-vn-gH0"/>
+                        <outlet property="firstTextView" destination="3Ip-nN-Vjn" id="uqV-l8-fjx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-6e-9WC" userLabel="First Responder" sceneMemberID="firstResponder"/>
