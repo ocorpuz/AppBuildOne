@@ -10,13 +10,34 @@ import UIKit
 
 class SecondViewController: UIViewController
 {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+    @IBOutlet weak var blankLabel: UILabel!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+       self.blankLabel.text = " "
+        
+        // Do any additional setup after loading the view.
+    
+    }
+    var interOne : Int = 1
+    var interTwo : Int = 5
+    
+    @IBAction func CalculatedPressed(_ sender: UIButton)
+    {
+     self.blankLabel.text = String(interTwo + interOne)
+    if interOne < interTwo
+    {
+        self.view.backgroundColor = UIColor.green
+    }
+        else
+    {
+        self.view.backgroundColor = UIColor.red
+        }
+
+    
+    }
 
     /*
     // MARK: - Navigation
